@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Nav from '../Nav/Nav'
 import './Content.css'
 
 export default class Content extends Component {
@@ -10,7 +9,6 @@ export default class Content extends Component {
     render() {
         return (
             <div>
-                <Nav />
                 <div className='content'>我是{this.props.location.state.name}，我的search为：{this.props.location.search}，我的hash为：{this.props.location.hash}</div>
             </div>
         )
